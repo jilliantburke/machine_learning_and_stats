@@ -12,4 +12,14 @@ Example data is provided. This data consists of whole genome sequence of environ
 
 The expected output of the R script is a dotplot saved to the working directory as a PNG file. An example of this is located in pca_plot.png.
 
+**Usage**
 
+This script does not take any arguments. It can be run by running the script from within same directory as the data, and with the data named sample_data.csv.  
+
+**Dependecies**
+
+R 3.1 or higher
+
+R packages:
+1. ddplyr 
+2. ggplot 2
