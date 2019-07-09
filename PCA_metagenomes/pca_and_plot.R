@@ -4,8 +4,8 @@
 library(dplyr)
 library(ggplot2)
 
-this.dir <- dirname(parent.frame(2)$ofile)
-setwd(this.dir)
+#this.dir <- dirname(parent.frame(2)$ofile)
+#setwd(this.dir)
 #setwd('~')
 getwd()
 data <- read.table('sample_data.csv', sep=',', header=TRUE)
@@ -45,3 +45,5 @@ p<-p+geom_point() + xlab(percentage[1]) + ylab(percentage[2])
 p
 
 dev.off()
+
+print("PCA plot is complete and located in the file pca_plot.png!")
