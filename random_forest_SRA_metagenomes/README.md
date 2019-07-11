@@ -1,4 +1,4 @@
-**Metagenomic Source Location Predictive Model**
+**Metagenomic Source Location Classification (Predition)**
 
 The program predicts a source classification for each metagenome (e.g. freshwater, marine water, human, animal, etc.) with roughly 80% accuracy. These metagenomes can be either RNAseq or shotgun DNAseq, but not amplicon/16s rRNA seq.
 
