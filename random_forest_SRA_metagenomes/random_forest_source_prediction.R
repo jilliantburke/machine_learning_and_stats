@@ -1,7 +1,4 @@
-# NOTE: filepaths are hardcoded
-#lines 14 (input file path) and 38 (output file path) must be changed before running
-
-#this script runs a random forest model on the input data provided and produces two plots
+#this script runs a random forest model and produces a plot of the within group error
 #1.plots as bar graph of OOB error rate by level of source category
 #2. plot of variable importance in model
 
@@ -44,7 +41,7 @@ error$level<-rownames(cf_mat)
 #
 #plot of within-group errors
 #
-png("oob_error_unbal_min50.png", width = 11, height = 9, units = 'in', res = 300)
+png("oob_error_unbal_min50.png", width = 7, height = 5, units = 'in', res = 300)
 error %>%
   arrange(cf_mat.class.error) %>%
   mutate(level=factor(level, levels=level)) %>%
@@ -59,16 +56,3 @@ error %>%
   ggtitle("Out of Bag Error by Level of Output Variable")
 
 dev.off()
-
-#
-#plot variable importance
-#
-
-png("var_importance_unbal_min50.png", width = 11, height = 9, units = 'in', res = 300)
-plot.new()
-varImpPlot(rf_model,type=1, pch=19, main='Variable Importance')#, xlab='Mean Decrease Accuracy')
-
-dev.off()
-
-
-
