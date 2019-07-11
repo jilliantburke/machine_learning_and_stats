@@ -8,11 +8,11 @@ The program also creates a graph containing the within-group error rates for eac
 
 **Example**
 
-Sample dataset is provided here. It is named df_data.csv. 
+Sample dataset is provided here, located in rf_data.csv. 
 
 **Usage**
 
-Simply run this script from the same directory as the data file. The data file must remain named "sample_data.csv." 
+Simply run this script from the same directory as the data file. The data file must remain named "rf_data.csv" unless line 20 in the source code is changed to reflect the new file name. 
 
 
 **Dependecies** 
