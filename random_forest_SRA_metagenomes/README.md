@@ -8,7 +8,7 @@ The program also creates a graph containing the within-group error rates for eac
 
 **Example**
 
-Sample dataset is provided here. It is named sample_data.csv. 
+Sample dataset is provided here. It is named df_data.csv. 
 
 **Usage**
 
